@@ -1,0 +1,60 @@
+.personal {
+    position: relative;
+    margin: 50px;
+}
+
+.personal-table {
+    position: relative;
+    width: 100%;
+
+    &__row {
+        // height: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header {
+    &__cell {
+        flex: 1;
+
+        &_1 {
+            flex: 0;
+        }
+    }
+}
+
+.table-body {
+    width: 100%;
+    display: block;
+    max-height: 200px;
+    overflow-y: overlay;
+}
+
+thead {
+    display: block;
+    width: 100%;
+}
+
+.table-container {
+    width: 100vw;
+}
+
+.buttons {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__title {
+        margin-right: 30px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__button {
+        margin-right: 20px;
+    }
+}

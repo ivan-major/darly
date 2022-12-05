@@ -1,0 +1,41 @@
+.form {
+    height: auto;
+    width: 70vw;
+    position: absolute;
+    // top: 50%;
+    // left: -100%;
+
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+
+    &_active {
+        top: 50%;
+        left: 50%;
+        transition-duration: 0.5s;
+        transform: translate(-50%, -50%);
+    }
+
+    &_not-active {
+        transition-duration: 0.5s;
+        left: -100%;
+        top: 50%;
+        transform: translate(0, 0);
+    }
+}
+
+.close {
+    display: flex;
+    justify-content: end;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
